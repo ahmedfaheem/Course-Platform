@@ -4,6 +4,7 @@ import placeholder from '@/assets/placeholder.svg'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 export default function Courses() {
    
     const [courses, setCourses] = useState([]);
@@ -46,6 +47,7 @@ export default function Courses() {
           <span>Course library</span>
           <h2>Our Courses</h2>
           <p>Explore focused courses designed to help you learn new skills and advance your career.</p>
+           <Link to="/courses/add" className="btn btn-primary my-5">Add Course</Link>
         </div>
          <div className="row g-4">
           { loading && <div className="text-center">

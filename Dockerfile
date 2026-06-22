@@ -8,6 +8,6 @@ RUN npm install && npm cache clean --force
 
 COPY . .
 
-ENTRYPOINT [ "npm", "run" ,"dev" , '--', '--host']
+ENTRYPOINT ["npm", "run", "dev", "--", "--host"]
 
 EXPOSE 3000
